@@ -1,3 +1,10 @@
+//
+//  DetailsVC.swift
+//  MovieApp
+//
+//  Created by Esraa Hassan on 10/2/20.
+//  Copyright © 2020 jets. All rights reserved.
+//
 
 import UIKit
 
@@ -11,15 +18,8 @@ class DetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = movie?.title
-        if let rating = movie?.rating {
-            ratingLabel.text = "\(rating)"
-
-        }
-        
-        if let releaseYear = movie?.releaseYear{
-            releaseYearLabel.text = "\(releaseYear)"
-
-        }
+        ratingLabel.text = "\(movie?.rating)"
+        releaseYearLabel.text = "\(movie?.releaseYear)"
         let url = URL(string: (movie?.image)!)
         movieImageView.sd_setImage(with: url!, completed: nil)
         // Do any additional setup after loading the view.
