@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  MovieApp
-//
-//  Created by Esraa Hassan on 10/8/20.
-//  Copyright © 2020 jets. All rights reserved.
-//
 
 import UIKit
 
