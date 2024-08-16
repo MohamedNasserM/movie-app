@@ -18,7 +18,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     var moviesArray:[Movie]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         moviesArray = [Movie]()
         let url = URL(string: "https://api.androidhive.info/json/movies.json")
         let request = URLRequest(url: url!)
@@ -54,7 +53,6 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
